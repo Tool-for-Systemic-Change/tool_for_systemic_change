@@ -1,0 +1,9 @@
+<%= simple_form_for(@organisation, role: 'form', html: { class: 'form-horizontal record-form' }) do |f| %>
+  <%= f.error_notification %>
+  <%= form_header(@organisation) %>
+  <%= f.input :name %>
+  <%= f.input :description , as: :text, input_html: { class: 'textarea' } %>
+  <%= f.association :stakeholder_type, collection: current_account.stakeholder_types.order(:name) %>
+  <%= f.input :weblink %>
+  <%= render_form_button(f) %>
+<% end %>

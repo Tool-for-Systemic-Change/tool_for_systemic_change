@@ -1,0 +1,19 @@
+<%= simple_form_for(@user, role: 'form', html: { class: 'form-horizontal record-form' }) do |f| %>
+  <%= f.error_notification %>
+  <%= form_header(@user) %>
+  <%= f.input :email %>
+  <%= f.input :name %>
+  <%= f.input :time_zone, as: :select, collection: options_for_timezone_select, include_blank: false %>
+  <hr>
+  <%= 
+    f.input :account_role, 
+      collection: lookup_account_roles, 
+      include_blank: false
+  %>
+  <hr> 
+  <%= f.input :created_at, as: :string, readonly: true %>
+  <%= f.input :updated_at, as: :string, readonly: true %>
+  <%= f.input :last_sign_in_at, as: :string, readonly: true %>
+  <%= render_form_button(f) %>
+<% end %>
+

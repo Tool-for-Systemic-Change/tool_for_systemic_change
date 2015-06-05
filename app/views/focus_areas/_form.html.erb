@@ -1,0 +1,19 @@
+<%= simple_form_for(@focus_area, role: 'form', html: { class: 'form-horizontal record-form' }) do |f| %>
+  <%= f.error_notification %>
+  <%= form_header(@focus_area) %>
+  <%= f.input :name %>
+  <%= f.input :description , as: :string %>
+  <%= f.association :focus_area_group %>
+  <%= f.input :position %>
+
+  <%- if @focus_area.focus_area_group.scorecard_type == 'SustainableDevelopmentGoalAlignmentCard' %>
+    <%= f.input :icon_name, collection: options_for_icon_name %>
+    <%= f.input :actual_color, as: :color %>
+    <%= f.input :planned_color, as: :color %>
+  <%- end %>
+
+  <%= f.input :video_tutorial_id, collection: VideoTutorial.all,
+    hint: 'Any video tutorial can only be assigned to one other record at a time. Link a tutorial to this record removes any other link elsewhere.'
+  %>
+  <%= render_form_button(f) %>
+<% end %>

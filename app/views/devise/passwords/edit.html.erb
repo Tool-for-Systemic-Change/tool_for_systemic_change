@@ -1,0 +1,52 @@
+<div class="login-box">
+  <div class="login-logo">
+    <span class="logo-lg">
+      <%= image_tag('logo.png', style: 'height:35px;margin-top:-4px;margin-right:7px')%>
+      <b>Wicked</b>Lab
+    </span>
+  </div>
+
+  <%= render partial: 'layouts/shared/flash' %>
+
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Change your password</p>
+
+      <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put, class: 'form-horizontal'}) do |f| %>
+        <%= f.error_notification %>
+
+        <%= f.input :reset_password_token, as: :hidden %>
+        <%= f.full_error :reset_password_token %>
+
+        <div class="input-group mb-3">
+          <%= f.input_field :password, required: false, autofocus: true, label: false, placeholder: 'New password', type: 'password', class: 'form-control' %>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <%= f.input_field :password_confirmation, required: false, autofocus: true, label: false, placeholder: 'Password confirmation', type: 'password', class: 'form-control' %>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <%= f.button :submit, "Change my password", class: 'btn btn-primary btn-block' %>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-8">
+            <%= render "devise/shared/links" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
