@@ -12,7 +12,9 @@ Dveloped by WickedLab, the Tool for Systemic Change is a web-based application t
 
 The tool has been extended to support the management of problems in relation to the United Nations Sustainable Development Goals (SDGs), and to support the development of strategies to address them.
 
-The source code tool has been released under an open source license, and is now maintained by Eventide Systems Pty Ltd. The various configurations used to define the diagnostic models used by the tool remain the intellectual property of their owners. These models are _not_ covered by the open source license. Please see **Additional License Information** below.
+The source code for the tool has been released under an open source license by Wicked Lab. Please see the related [Facebook post](https://www.facebook.com/WickedLabAu/posts/936522384845567/) for details.
+
+The various configurations used to define the diagnostic models used by the tool remain the intellectual property of their owners. These models are _not_ covered by the open source license. Please see **Additional License Information** below.
 
 ## License & Attribution
 
