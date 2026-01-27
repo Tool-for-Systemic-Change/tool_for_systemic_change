@@ -1,4 +1,4 @@
-📌 Archived Source Notice
+# 📌 Archived Source Notice
 
 This repository contains the version of the source code released by Wicked Lab on 10 December 2023 under an open‑source licence. It has been preserved here in its original form for reference and historical continuity. No further development will occur in this repository, and the code is now considered archived.
 
@@ -6,7 +6,7 @@ This repository contains the version of the source code released by Wicked Lab o
 
 ## Background
 
-The initial Wireframes used in the Diagnostic Model and this software were developed by Dr Sharon Zivkovic in her PhD thesis titled "Determining and increasing the social impact of an active citizenship education program," published in 2014 at the School of Education, University of South Australia, Adelaide.
+> The initial Wireframes used in the Diagnostic Model and this software were developed by Dr Sharon Zivkovic in her PhD thesis titled "Determining and increasing the social impact of an active citizenship education program," published in 2014 at the School of Education, University of South Australia, Adelaide.
 
 Dveloped by WickedLab, the Tool for Systemic Change is a web-based application that supports the development of a shared understanding of complex problems and the development of strategies to address them. It is based on the Transition Card model developed by Dr Sharon Zivkovic, and is used by a number of organisations in Australia and internationally.
 
